@@ -24,7 +24,14 @@ def get_average(pic, size):
     rgb["average"].append(sum(rgb["blue"]) / len(rgb["blue"]))
 
     # return tuple(rgb["average"])
-    print(tuple(rgb["average"]))
+    value = tuple(rgb["average"])
+    print("RGB: " + str(value))
+    hexadecimal_convert(rgb)
+
+
+def hexadecimal_convert(rgb):
+    value = "".join(map(chr, rgb["average"])).encode('hex')
+    print("Hex: #" + value)
 
 
 def get(url):
