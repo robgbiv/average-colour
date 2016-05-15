@@ -1,2 +1,2 @@
-# average-colour
-Figuring out how to generate an average colour for an image in Python
+# colour-average
+Experimenting in Python with generating the average colour of an image from a URL.
